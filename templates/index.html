@@ -9,6 +9,15 @@
     h1 {
       font-family: 'Roboto', sans-serif;
     }
+    .center {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .btn {
+      width: 120px;  /* 设置按钮宽度 */
+      text-align: center;  /* 设置按钮文本居中 */
+    }
   </style>
 </head>
 <body class="container">
@@ -30,7 +39,10 @@
       <input type="number" name="num4" id="num4" required>
       <label for="num4">Number 4</label>
     </div>
-    <button type="submit" class="btn waves-effect waves-light">Calculate</button>
+    <div class="center">
+      <button type="submit" class="btn waves-effect waves-light">Calculate</button>
+      <input type="reset" value="Reset" class="btn waves-effect waves-light red">  <!-- 添加 'red' 类来设置红色背景 -->
+    </div>
   </form>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
