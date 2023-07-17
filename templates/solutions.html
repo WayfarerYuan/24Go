@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>24 Point Solver - Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="container">
+  <h1 class="center-align">Solutions</h1>
+  <ul class="collection">
+    {% for solution in solutions %}
+      <li class="collection-item">{{ solution }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{{ url_for('index') }}" class="btn waves-effect waves-light">Back</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
