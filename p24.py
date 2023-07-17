@@ -61,9 +61,9 @@ def dfs(nums, target, expression, current_val, index, solutions):
     dfs(nums, target, f"({expression} * {num})", current_val * num, index + 1, solutions)
 
     # Division operation (try both orders, avoid division by zero)
-    if current_val != 0 and num != 0:
+    if num != 0:
         dfs(nums, target, f"({expression} / {num})", current_val / num, index + 1, solutions)
-    if num != 0 and current_val != 0:
+    if current_val != 0:
         dfs(nums, target, f"({num} / {expression})", num / current_val, index + 1, solutions)
 
 
