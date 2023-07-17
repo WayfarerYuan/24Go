@@ -12,6 +12,7 @@
 ## 网站访问量
 
 [![HitCount](http://hits.dwyl.com/{WayfarerYuan}/{24Go}.svg)](http://hits.dwyl.com/{WayfarerYuan}/{24Go})
+[![HitCount](https://hits.dwyl.com/WayfarerYuan/24Go.svg?style=flat-square)](http://hits.dwyl.com/WayfarerYuan/24Go)
 
 ## 许可证
 
