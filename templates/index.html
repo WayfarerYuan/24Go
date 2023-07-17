@@ -9,6 +9,14 @@
     h1 {
       font-family: 'Roboto', sans-serif;
     }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Roboto', sans-serif;
+    }
     .center {
       display: flex;
       justify-content: center;
@@ -18,10 +26,13 @@
       width: 120px;  /* 设置按钮宽度 */
       text-align: center;  /* 设置按钮文本居中 */
     }
+    .btn-white-text::before {
+      color: white !important;
+    }
   </style>
 </head>
 <body class="container">
-  <h1 class="center-align">24 Points Solver</h1>
+  <h1 class="center-align">Master24</h1>
   <form method="POST">
     <div class="input-field">
       <input type="number" name="num1" id="num1" required>
@@ -41,7 +52,7 @@
     </div>
     <div class="center">
       <button type="submit" class="btn waves-effect waves-light">Calculate</button>
-      <input type="reset" value="Reset" class="btn waves-effect waves-light red">  <!-- 添加 'red' 类来设置红色背景 -->
+      <input type="reset" value="Reset" class="btn waves-effect waves-light red btn-white-text">  <!-- 添加 `btn-white-text` 类 -->
     </div>
   </form>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
